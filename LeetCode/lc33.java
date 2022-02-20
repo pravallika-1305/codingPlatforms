@@ -30,3 +30,4 @@ class Solution {
         
     }
 }
+//Using binary search, run time complexity: O(log N)
