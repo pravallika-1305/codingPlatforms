@@ -5,8 +5,17 @@
   1. Preorder
   2. Inorder
   3. Postorder */
+public class Node{
+  int data;
+  Node left;
+  Node right;
+  
+  public Node(key){
+    this.data = key;
+  }
+}
 
-public void preorder(node) {
+public void preorder( Node node) {
   /* Root, Left, Right*/
   
   if(node == null){
@@ -18,7 +27,7 @@ public void preorder(node) {
 }
 
 
-public void inorder(node) {
+public void inorder(Node node) {
   /*Left, Root, Right*/
   
   if(node == null){
@@ -28,7 +37,7 @@ public void inorder(node) {
   print(node.data);
   inorder(node.right);
 }
-public void postorder(node) {
+public void postorder(Node node) {
   /* Left, Right, Root*/
   
   if(node == null){
