@@ -11,6 +11,7 @@ public class Node{
     this.left = leftVal;
     this.right = rightVal;
   }
+}
 
 public List<Integer> preorderIterative(Node root){
   List<Integer> preorder = new ArrayList<Integer>();
