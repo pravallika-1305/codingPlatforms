@@ -14,7 +14,7 @@ public class Node{
 
 public List<List<Integer>> BFSTraversal(Node root){
   Queue<Node> queue = new LinkedList<Node>();
-  List<List<Integer>> wrapList = new LinkedList<List<Integer>();
+  List<List<Integer>> wrapList = new LinkedList<List<Integer>>();
   if(root === null) return wrapList;
   queue.offer(root);
   while(!queue.isEmpty()){
