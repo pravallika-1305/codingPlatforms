@@ -18,11 +18,12 @@ public List<List<Integer>> BFSTraversal(Node root){
   if(root === null) return wrapList;
   queue.offer(root);
   while(!queue.isEmpty()){
-    int numbersInTheLevel = queue.size();
+    int nodesInTheLevel = queue.size();
     List<Integer> levelList = new LinkedList<Integer>();
-    for(int i = 0; i < numbersInTheLevel; i++){
+    for(int i = 0; i < nodesInTheLevel; i++){
       if (queue.peek().left != null) queue.offer(queue.peek().left);
       if (queue.peek().right != null) queue.offer(queue.peek().right);
+      levelList.add(queue.poll().value);
     }
       wrapList.add(levelList);
    }
