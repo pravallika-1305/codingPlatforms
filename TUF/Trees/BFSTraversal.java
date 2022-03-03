@@ -11,6 +11,7 @@ public class Node{
     this.left = leftVal;
     this.right = rightVal;
   }
+}
 
 public List<List<Integer>> BFSTraversal(Node root){
   Queue<Node> queue = new LinkedList<Node>();
