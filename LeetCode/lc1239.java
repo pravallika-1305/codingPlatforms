@@ -10,7 +10,7 @@ class Solution {
         
         
         
-    //finding all possible combinations of the string to reach at a valid string
+    //finding all possible combinations of the string to reach at a valid string with max length
     public void dfs(List<String> arr, String path, int idx) {
         boolean isUniqueChar = isUniqueChars(path);
 
